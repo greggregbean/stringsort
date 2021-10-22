@@ -8,6 +8,16 @@ int revcmp(char* str1, char* str2)
     int len2 = strlen(str2);
 
     int i = 1;
+    
+    if (str1[len1 - i] <= 64)
+    {
+        len1--;
+    }
+
+    if (str2[len2 - i] <= 64)
+    {
+        len2--;
+    }
 
     while (1)
     {
