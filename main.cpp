@@ -21,12 +21,12 @@ int main()
     char* str = (char*) calloc(lenOfStr + 2, sizeof(char));
     char** index = (char**) calloc(lenOfIndex + 2, sizeof(char*));
     liner(str, index, fp);
-    bublesorter(index, lenOfIndex);
+    bublesorter(index, lenOfIndex,  str1_MORE_str2);
     fprintf(result, "\n");
     fprintf(result, "RESULT OF BUBLESORTER: \n");
     print(index, result);
     fprintf(result, "\n");
-    revbublesorter(index, lenOfIndex);
+    bublesorter(index, lenOfIndex, revcmp);
     fprintf(result, "\n");
     fprintf(result, "RESULT OF REVBUBLESORTER: \n");
     print(index, result);
